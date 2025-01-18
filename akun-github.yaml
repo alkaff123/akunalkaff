@@ -1,6 +1,6 @@
 proxies:
 - name: ASIA+VMESS-WS(2025-01-25)
-  server: asi
+  server: asia1.fufo.org
   port: 443
   type: vmess
   uuid: a4b7c840-d5a8-11ef-b034-205c6d5f5d78
