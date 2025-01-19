@@ -1,9 +1,1 @@
 proxies:
-  - name: ASIA Trojan-TCP(2025-01-26)
-    server: asia1.fufo.org
-    port: 443
-    type: trojan
-    password: dfd01ea0-d64c-11ef-b136-205c6d5f5d78
-    skip-cert-verify: true
-    sni: bing.com
-    udp: true
