@@ -1,17 +1,17 @@
 proxies:
-- name: ASIA+VMESS-WS(2025-01-25)
-  server: asia1.fufo.org
-  port: 443
-  type: vmess
-  uuid: a4b7c840-d5a8-11ef-b034-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: bing.com
-  network: ws
-  ws-opts:
-    path: /vmws
-    headers:
-      Host: bing.com
-  udp: true
+  - name: ASIA+VMESS-WS(2025-01-26)
+    server: asia1.fufo.org
+    port: 443
+    type: vmess
+    uuid: cde4e100-d633-11ef-b531-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: bing.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: bing.com
+    udp: true
