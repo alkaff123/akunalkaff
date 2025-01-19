@@ -1,0 +1,14 @@
+proxies:
+  - name: ASIA Trojan-WS(2025-01-26)
+    server: asia1.fufo.org
+    port: 443
+    type: trojan
+    password: 000545d0-d665-11ef-b532-205c6d5f5d78
+    skip-cert-verify: true
+    sni: bing.com
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: bing.com
+    udp: true
