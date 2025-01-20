@@ -1,9 +1,17 @@
 proxies:
-  - name: fr1.test3.net
-    server: fr1.test3.net
+  - name: SG+VMESS-WS(2025-01-27)
+    server: sg3.socifiles.com
     port: 443
-    type: trojan
-    password: 90da36f0-d709-11ef-a4ea-1239d0255272
+    type: vmess
+    uuid: cd9b2ba0-d70a-11ef-8230-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: indihome.com
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indihome.com
     udp: true
