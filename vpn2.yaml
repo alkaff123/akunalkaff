@@ -1,17 +1,17 @@
 proxies:
-  - name: "US\r\n+VMESS-WS NTLS(2025-01-27)"
-    server: us1.socifiles.com
-    port: 80
+  - name: ASIA+VMESS-TCP (2025-01-28)
+    server: asia1.fufo.org
+    port: 443
     type: vmess
-    uuid: 0c0324a0-d70b-11ef-a800-1239d0255272
+    uuid: 145a3ba0-d7ea-11ef-b830-205c6d5f5d78
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
     servername: indihome.com
-    network: ws
-    ws-opts:
-      path: /vmws
-      headers:
-        Host: indihome.com
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /vmtc
     udp: true
