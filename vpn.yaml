@@ -1,9 +1,9 @@
 proxies:
-  - name: SG+VMESS-WS(2025-01-27)
+  - name: SG+VMESS-WS(2025-01-28)
     server: sg3.socifiles.com
     port: 443
     type: vmess
-    uuid: cd9b2ba0-d70a-11ef-8230-1239d0255272
+    uuid: ab32f660-d7e9-11ef-b798-1239d0255272
     alterId: 0
     cipher: auto
     tls: true
