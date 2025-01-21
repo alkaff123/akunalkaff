@@ -13,17 +13,19 @@ proxies:
     grpc-opts:
       grpc-service-name: vmgrpc
     udp: true
-  - name: ASIA+VMESS-H2 (2025-01-28)
-    server: vmh2.asia1.fufo.org
+  - name: ASIA+VMESS-WS(2025-01-28)
+    server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: 78957dd0-d7fc-11ef-b435-205c6d5f5d78
+    uuid: 922eae90-d7fd-11ef-b935-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: indihome.com
-    network: h2
-    h2-opts:
-      path: /vmh2
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indihome.com
     udp: true
