@@ -1,28 +1,12 @@
 proxies:
-  - name: ASIA+VMESS-TCP (2025-01-29)
+   - name: ASIA+VMESS-WS(2025-01-30)
     server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: 8e1da640-d86e-11ef-b934-205c6d5f5d78
+    uuid: 34da8600-d971-11ef-b538-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
-    skip-cert-verify: true
-    servername: indihome.com
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /vmtc
-    udp: true
-  - name: ASIA+VMESS-WS NTLS(2025-01-29)
-    server: asia1.fufo.org
-    port: 80
-    type: vmess
-    uuid: 69dab930-d875-11ef-b834-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: false
     skip-cert-verify: true
     servername: indihome.com
     network: ws
