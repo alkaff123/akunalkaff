@@ -1,17 +1,17 @@
 proxies:
-  - name: ASIA+VMESS-TCP (2025-01-30)
-    server: asia1.fufo.org
-    port: 443
+  - name: lb.vhax.net
+    server: lb.vhax.net
+    port: 80
     type: vmess
-    uuid: c0581b90-d971-11ef-b333-205c6d5f5d78
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
     servername: indihome.com
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /vmtc
+    network: ws
+    ws-opts:
+      path: /sshkit/asllll/6792f664dac06/
+      headers:
+        Host: indihome.com
     udp: true
