@@ -15,3 +15,19 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
+  - name: SG+VMESS-WS(2025-01-31)
+    server: sg3.socifiles.com
+    port: 443
+    type: vmess
+    uuid: 3547e580-d9fa-11ef-ade8-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indihome.com
+    udp: true
