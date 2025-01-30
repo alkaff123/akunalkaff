@@ -31,19 +31,19 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
-- name: ASIA Trojan-WS
-  type: trojan
-  server: asia1.fufo.org
-  port: 443
-  password: 589dc3b0-deee-11ef-b431-205c6d5f5d78
-  sni: indihome.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-      path: "/trojanws"
-      headers:
-  udp: true
- - name: ASIA Vless-WS
+  - name: ASIA Trojan-WS
+    type: trojan
+    server: asia1.fufo.org
+    port: 443
+    password: 589dc3b0-deee-11ef-b431-205c6d5f5d78
+    sni: indihome.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+       path: "/trojanws"
+       headers:
+    udp: true
+  - name: ASIA Vless-WS(2025-02-06)
     server: asia1.fufo.org
     port: 443
     type: vless
@@ -57,4 +57,4 @@ proxies:
       path: /vlws
       headers:
         Host: indihome.com
-    udp: true
+    udp: true  
