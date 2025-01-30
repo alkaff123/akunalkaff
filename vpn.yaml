@@ -1,1 +1,17 @@
 proxies:
+  - name: ASIA+VMESS-TCP
+    server: asia1.fufo.org
+    port: 443
+    type: vmess
+    uuid: 3cf08990-dee3-11ef-b238-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /vmtc
+    udp: true
