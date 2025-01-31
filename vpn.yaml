@@ -31,17 +31,21 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
-  - name: ASIA Trojan-WS
-    type: trojan
+  - name: ASIA+VMESS-TCP (2025-02-07)
     server: asia1.fufo.org
     port: 443
-    password: 589dc3b0-deee-11ef-b431-205c6d5f5d78
-    sni: indihome.com
+    type: vmess
+    uuid: bef6a870-df99-11ef-b532-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    network: ws
-    ws-opts:
-       path: "/trojanws"
-       headers:
+    servername: indohome.com
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /vmtc
     udp: true
   - name: ASIA Vless-WS(2025-02-06)
     server: asia1.fufo.org
