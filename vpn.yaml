@@ -31,7 +31,7 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
-  - name: ASIA+VMESS-TCP (2025-02-07)
+  - name: ASIA+VMESS-TCP
     server: asia1.fufo.org
     port: 443
     type: vmess
@@ -47,11 +47,11 @@ proxies:
       path:
         - /vmtc
     udp: true
-  - name: ASIA Vless-WS(2025-02-06)
+  - name: ASIA Vless-WS
     server: asia1.fufo.org
     port: 443
     type: vless
-    uuid: 48db6550-def5-11ef-b835-205c6d5f5d78
+    uuid: 154fd5d0-df9a-11ef-b432-205c6d5f5d78
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -61,4 +61,4 @@ proxies:
       path: /vlws
       headers:
         Host: indihome.com
-    udp: true  
+    udp: true
