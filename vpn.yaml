@@ -3,7 +3,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: 3552e380-df99-11ef-b336-205c6d5f5d78
+    uuid: b15da480-e04c-11ef-b135-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -35,7 +35,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: bef6a870-df99-11ef-b532-205c6d5f5d78
+    uuid: 1d03e640-e04c-11ef-b138-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
@@ -51,7 +51,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: vless
-    uuid: 154fd5d0-df9a-11ef-b432-205c6d5f5d78
+    uuid: 51f18210-e04c-11ef-b631-205c6d5f5d78
     cipher: auto
     tls: true
     skip-cert-verify: true
@@ -66,7 +66,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: trojan
-    password: 6b405b40-df9a-11ef-b535-205c6d5f5d78
+    password: 7f6ac4e0-e04c-11ef-b737-205c6d5f5d78
     skip-cert-verify: true
     sni: indihome.com
     network: ws
