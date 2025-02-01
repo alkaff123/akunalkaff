@@ -107,3 +107,20 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
+  - name: sshocean-administrator
+    server: sg5.v2vmess.site
+    port: 443
+    type: vmess
+    uuid: 75fa4903-06db-40ac-bdab-da3bea40d350
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: indihome.com
+    udp: true
+proxy-groups:
