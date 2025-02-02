@@ -3,7 +3,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: b15da480-e04c-11ef-b135-205c6d5f5d78
+    uuid: 84224e70-e114-11ef-b234-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: true
