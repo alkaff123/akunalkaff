@@ -1,9 +1,25 @@
 proxies:
-- name: ASIA+VMESS-WS
+  - name: ASIA+VMESS-WS
     server: asia1.fufo.org
     port: 443
     type: vmess
-    uuid: e11dda20-dee2-11ef-b636-205c6d5f5d78
+    uuid: 84224e70-e114-11ef-b234-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indohome.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indohome.com
+    udp: true
+  - name: lb.vhax.net
+    server: lb.vhax.net
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
     alterId: 0
     cipher: auto
     tls: true
@@ -11,7 +27,67 @@ proxies:
     servername: indihome.com
     network: ws
     ws-opts:
-      path: /vmws
+      path: /sshkit/administratora/679b40c69b893/
+      headers:
+        Host: indihome.com
+    udp: true
+  - name: ASIA+VMESS-TCP
+    server: asia1.fufo.org
+    port: 443
+    type: vmess
+    uuid: 89351f30-e11b-11ef-b835-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indohome.com
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /vmtc
+    udp: true
+  - name: ASIA Vless-WS
+    server: asia1.fufo.org
+    port: 443
+    type: vless
+    uuid: 54715d60-e117-11ef-b833-205c6d5f5d78
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vlws
+      headers:
+        Host: indihome.com
+    udp: true
+  - name: ASIA Trojan-WS
+    server: asia1.fufo.org
+    port: 443
+    type: trojan
+    password: cb78f170-e116-11ef-b932-205c6d5f5d78
+    skip-cert-verify: true
+    sni: indihome.com
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: indihome.com
+    udp: true
+  - name: vslb
+    server: lb.vhax.net
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /sshkit/adddff/679d965dd9c71/
       headers:
         Host: indihome.com
     udp: true
