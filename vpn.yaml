@@ -66,7 +66,7 @@ proxies:
     server: asia1.fufo.org
     port: 443
     type: trojan
-    password: 7f6ac4e0-e04c-11ef-b737-205c6d5f5d78
+    password: cb78f170-e116-11ef-b932-205c6d5f5d78
     skip-cert-verify: true
     sni: indihome.com
     network: ws
