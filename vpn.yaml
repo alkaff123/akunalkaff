@@ -15,3 +15,18 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
+  - name: ASIA Vless-WS
+    server: asia1.fufo.org
+    port: 443
+    type: vless
+    uuid: 29c2ba10-e431-11ef-b838-205c6d5f5d78
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vlws
+      headers:
+        Host: indihome.com
+    udp: true
