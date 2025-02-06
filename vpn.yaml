@@ -33,3 +33,19 @@ proxies:
     skip-cert-verify: true
     sni: indihome.com
     udp: true
+  - name: SG+VMESS-WS(2025-02-13)
+    server: sg3.socifiles.com
+    port: 443
+    type: vmess
+    uuid: 06035450-e483-11ef-92a3-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indihome.com
+    udp: true
