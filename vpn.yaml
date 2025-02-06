@@ -25,3 +25,11 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
+  - name: fr1.test3.net
+    server: fr1.test3.net
+    port: 443
+    type: trojan
+    password: e5909a40-e482-11ef-b5bd-1239d0255272
+    skip-cert-verify: true
+    sni: indihome.com
+    udp: true
