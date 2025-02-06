@@ -1,51 +1,4 @@
 proxies:
-  - name: ASIA+VMESS-WS
-    server: asia1.fufo.org
-    port: 443
-    type: vmess
-    uuid: b4128480-e430-11ef-b439-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: indihome.com
-    network: ws
-    ws-opts:
-      path: /vmws
-      headers:
-        Host: indihome.com
-    udp: true
-  - name: ASIA Vless-WS
-    server: asia1.fufo.org
-    port: 443
-    type: vless
-    uuid: 29c2ba10-e431-11ef-b838-205c6d5f5d78
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: indihome.com
-    network: ws
-    ws-opts:
-      path: /vlws
-      headers:
-        Host: indihome.com
-    udp: true
-  - name: ASIA+VMESS-TCP (2025-02-13)
-    server: asia1.fufo.org
-    port: 443
-    type: vmess
-    uuid: 947f57f0-e47f-11ef-b639-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: indihome.com
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /vmtc
-    udp: true
   - name: ASIA Trojan-WS(2025-02-13)
     server: asia1.fufo.org
     port: 443
@@ -56,22 +9,6 @@ proxies:
     network: ws
     ws-opts:
       path: /trojanws
-      headers:
-        Host: indihome.com
-    udp: true
-  - name: lb.vhax.net
-    server: lb.vhax.net
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: indihome.com
-    network: ws
-    ws-opts:
-      path: /sshkit/indi/67a4a252010e7/
       headers:
         Host: indihome.com
     udp: true
