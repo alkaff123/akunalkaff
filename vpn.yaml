@@ -75,3 +75,16 @@ proxies:
       headers:
         Host: indihome.com
     udp: true
+  - name: US
+    server: us1.socifiles.com
+    port: 443
+    type: trojan
+    password: be901f90-e481-11ef-8341-1239d0255272
+    skip-cert-verify: true
+    sni: indihome.com
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: indihome.com
+    udp: true
