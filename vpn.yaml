@@ -46,3 +46,16 @@ proxies:
       path:
         - /vmtc
     udp: true
+  - name: ASIA Trojan-WS(2025-02-13)
+    server: asia1.fufo.org
+    port: 443
+    type: trojan
+    password: 5f4579d0-e480-11ef-b731-205c6d5f5d78
+    skip-cert-verify: true
+    sni: indihome.com
+    network: ws
+    ws-opts:
+      path: /trojanws
+      headers:
+        Host: indihome.com
+    udp: true
